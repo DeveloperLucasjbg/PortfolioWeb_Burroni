@@ -1,0 +1,290 @@
+.presentacion {
+  background-color: black;
+  background-image: url("../img/debeloper.jpg");
+  background-size: cover;
+  opacity: 0.9;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.presentacion__presentacionTexto {
+  opacity: 1 !important;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  font-size: large;
+  line-height: 1.5;
+  margin-left: 1em;
+  letter-spacing: 2px;
+}
+
+.presentacion__presentacionTexto p {
+  padding: 1em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 55%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.Name {
+  font-size: 3rem;
+}
+
+.presentacion__presentacionTexto__presentacionTitulo {
+  color: white;
+  font-size: xx-large;
+}
+
+.sobreMi {
+  background-image: url("../img/sobremi.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 92vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sobreMi p {
+  font-size: 2.6vh;
+}
+
+.sobreMi h2 {
+  font-size: 5vh;
+}
+
+.sobreMiText {
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.77);
+  text-align: center;
+  line-height: 1.6;
+  width: 65%;
+}
+
+.cvContenedor {
+  height: 50vh;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 1em;
+}
+
+.cvContenedor img {
+  max-width: 4em;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cvContenedor p {
+  font-size: large;
+  margin: 0.5em;
+}
+
+.cvContenedor h3 {
+  font-size: large;
+  margin: 0.5em;
+}
+
+.cvContenedor__skill {
+  margin: 0.3em;
+  height: 8vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.contenedorMetodos {
+  background-color: #3F51B5;
+  height: 27em;
+  width: 100%;
+}
+
+.contenedorMetodos h2 {
+  padding-top: 1em;
+  text-align: center;
+  font-size: 5vh;
+  color: white;
+}
+
+.contenedorMetodos__contenidoMetodos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedorMetodos__contenidoMetodos img {
+  padding-top: 1em;
+  width: 5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.web, .MobileFirst, .SPA {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 33%;
+}
+
+.Portfolio {
+  background-color: #F5F5F5;
+  text-align: center;
+  grid-gap: 1em;
+}
+
+.Portfolio h4 {
+  padding-top: 1em;
+  margin: 0.5em;
+}
+
+.Portfolio img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 70%;
+}
+
+.fit {
+  background-color: white !important;
+  color: black !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.imgFlotante img {
+  max-width: 5em;
+  position: fixed;
+  top: 90%;
+  left: 90%;
+}
+
+.contact {
+  margin-top: 0em;
+  font-size: medium;
+  color: black;
+  text-align: center;
+}
+
+.contact .red img {
+  max-width: 2em;
+}
+
+.contact label {
+  margin-bottom: 0.1 !important;
+}
+
+.red {
+  margin: 2em;
+}
+
+.links {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.B {
+  margin: 2px;
+}
+
+@media (max-width: 920px) {
+  .sobreMiText {
+    width: 87%;
+  }
+  p {
+    font-size: 2vh !important;
+  }
+  .cv {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .contenedorMetodos h2 {
+    font-size: small;
+  }
+  h3 {
+    font-size: medium !important;
+  }
+}
+
+@media (max-width: 490px) {
+  .presentacion h1 {
+    font-size: 1em;
+  }
+  .presentacionTitulo h2 {
+    font-size: 0.6em;
+  }
+  small {
+    display: none;
+  }
+  .cv p, .cv h3 {
+    font-size: smaller;
+    margin: 0.3em;
+  }
+  .cv img {
+    max-width: 3em;
+  }
+}
+/*# sourceMappingURL=style.css.map */

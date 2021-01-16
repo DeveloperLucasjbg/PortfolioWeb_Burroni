@@ -1,0 +1,229 @@
+@import "_colores";
+
+.presentacion{
+    background-color: black;
+    background-image: url("../img/debeloper.jpg");
+    background-size:cover;
+    opacity:0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:92vh;
+    display:flex;
+    justify-content: center;
+ }
+ .presentacion__presentacionTexto{
+     opacity:1!important;
+     color:white;
+     display: flex;
+     flex-direction: column;
+     align-content:center;
+     justify-content: space-around;
+     text-align: center;
+     font-size:large;
+     line-height:1.5;
+     margin-left:1em;
+     letter-spacing:2px;
+     p{
+         padding: 1em;
+        align-self: center;
+        max-width:55%;
+        background-color: rgba(0, 0, 0, 0.800);     
+    }
+ }
+ .Name{
+     font-size: 3rem;
+ }
+ .presentacion__presentacionTexto__presentacionTitulo{
+     color:white;
+     font-size:xx-large;
+ }
+ .sobreMi{
+    background-image:url("../img/sobremi.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    height:92vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    p{
+        font-size: 2.6vh;
+    }
+
+    h2{
+        font-size:5vh;
+    }
+}
+.sobreMiText{
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.770);
+    text-align: center;
+    line-height:1.6;
+    width:65%;
+}
+.cvContenedor{  
+    height:50vh;
+    background-color:white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-content: center;
+    gap:1em;
+
+    img{
+        max-width:4em;
+        object-fit: contain;
+    }
+    p{
+        font-size:large;
+        margin:0.5em;
+    }
+    h3{
+        font-size:large;
+        margin:0.5em;
+    }
+}
+.cvContenedor__skill{
+    margin:0.3em;
+    height:8vh;
+    display: inline-flex;
+}
+.contenedorMetodos{
+    background-color:$AzulPrimario;
+    height:27em;
+    width: 100%;
+    h2{
+        padding-top :1em;
+        text-align: center;
+        font-size:5vh;
+        color: white;
+    }
+}
+.contenedorMetodos__contenidoMetodos{  
+  display: flex;
+    
+    img{
+        padding-top :1em;
+        width:5em;
+        object-fit: cover;
+        align-self: center;
+    }
+}
+.web, .MobileFirst, .SPA{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+width:33%;
+}
+    
+.Portfolio{
+    background-color:$BlancoPrimario;
+    text-align: center;
+    grid-gap:1em;
+
+    h4{
+        padding-top: 1em;
+        margin:0.5em;
+    }
+    img{
+        object-fit: cover;
+        max-width: 70%;
+    }
+}
+
+ .fit{
+     background-color: white !important;
+     color: black !important;
+     width: fit-content;
+     align-self: center;
+ }
+ .imgFlotante img{
+    max-width:5em ;
+    position: fixed;
+    top:90%;
+    left:90%;
+}
+.contact{
+    margin-top:0em;
+    font-size:medium;
+    color: black;
+    text-align: center;
+    .red img{
+        max-width:2em;
+    }
+    label{
+        margin-bottom:0.1 !important;
+    }
+}
+.red{
+    margin: 2em;
+}
+.links{
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.contacto{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.B{
+    margin:2px;;
+}
+
+// Responsive
+
+  @media (max-width: 920px) {
+      .sobreMiText{
+        width: 87%;
+      }
+        p{
+          font-size: 2vh !important;
+          
+      }
+      .cv{
+          grid-template-columns: 1fr 1fr;
+          height:fit-content;
+      }
+      .contenedorMetodos h2{
+          font-size: small;
+      }
+      h3{
+          font-size: medium !important;
+      }
+  }
+  @media (max-width: 490px) {
+    .presentacion{
+        h1{
+            font-size:1em;
+        }   
+    }
+    .presentacionTitulo{
+        h2{
+            font-size:0.6em;
+         }
+    }   
+    small{
+        display: none;
+    }
+    .cv {
+        p,h3{
+            font-size:smaller;
+            margin:0.3em;
+        }
+        img{
+            max-width:3em; 
+        }
+    }
+}
+
+
+// @for $i from 1 through 12{
+//     .s#{$i}{
+//         background-color: lighten($AzulPrimario , $i * 3);
+//     }
+// }

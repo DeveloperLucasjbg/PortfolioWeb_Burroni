@@ -37,7 +37,7 @@
         padding: 1em;
         align-self: center;
         max-width:55%;
-        background-color: rgba(0, 0, 0, 0.9);     
+        background-color: rgba(0, 0, 0, 0.7);     
     }
 }
 .Name{
@@ -85,41 +85,42 @@
 }
 //Seccion Skilss
 .cvContenedor{  
-    height:50vh;
+    margin-top:3.1vh;
+    height:max-content;
     background-color:white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
-    align-content:space-around;
-
+    align-content:space-between;
+    justify-content: space-between;
+    
     img{
-        max-width:4em;
+        justify-self: center;
+        max-width:7vh;
         object-fit: contain;
     }
     p{
         font-size:large;
-        margin:0.5em;
     }
     h3{
         font-size:large;
-        margin:0.5em;
     }
+    
 }
 .cvContenedor__skill{
-    margin:0.3em;
-    height:8vh;
-    display: inline-flex;
-    justify-content: space-evenly;
+    margin:2.1vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     p{
         font-family:'Montserrat', sans-serif;
     }
 }
 .contenedorMetodos{
     background-color:$primary-color-light;
-    height:27em;
     width: 100%;
     h2{
         color: $primary-text-color;
+        margin-top: 0.5em;
         padding-top :1em;
         text-align: center;
         font-size:5vh;
@@ -128,7 +129,6 @@
 .contenedorMetodos__contenidoMetodos{  
   display: flex;
     
-    align-content: space-around;
     justify-content: space-around;
     img{
     
@@ -139,15 +139,17 @@
     }
 }
 .web, .MobileFirst, .SPA{
-    margin-top: 1.4vh;
+    
+    margin:auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width:20%;  
+    width:21%;  
     h3, p {
         margin-top:1vh;
     }
 }
+
 // seccion Portfolio
 .Portfolio{
     background-color:$primary-color-text;
@@ -166,7 +168,7 @@
 
 // seccion Contacto
 .contact{
-    margin-top:0em;
+    margin-top:3vh;
     font-size:medium;
     color: black;
     text-align: center;
@@ -188,7 +190,7 @@
 }
 //botones form
 .botones{
-    margin:2px;;
+    margin:3px;;
 }
 
 // Responsive
@@ -345,7 +347,8 @@
   .cvContenedor{
     grid-template-columns: 1fr;
     height:max-content;
-    } 
+    
+    .cvContenedor__skill{height:5vh; margin-top: 3vh;}
      p,h3{
         font-size:smaller;
         margin:0.3em;
@@ -353,6 +356,7 @@
     img{
         max-width:3em; 
     }
+}
     .Portfolio{
         h4{
             font-size: 3vh;

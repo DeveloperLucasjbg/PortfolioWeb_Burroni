@@ -52,7 +52,7 @@
       -ms-grid-row-align: center;
       align-self: center;
   max-width: 55%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .Name {
@@ -110,42 +110,45 @@
 }
 
 .cvContenedor {
-  height: 50vh;
+  margin-top: 3.1vh;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   background-color: white;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .cvContenedor img {
-  max-width: 4em;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  max-width: 7vh;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
 .cvContenedor p {
   font-size: large;
-  margin: 0.5em;
 }
 
 .cvContenedor h3 {
   font-size: large;
-  margin: 0.5em;
 }
 
 .cvContenedor__skill {
-  margin: 0.3em;
-  height: 8vh;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  margin: 2.1vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .cvContenedor__skill p {
@@ -154,12 +157,12 @@
 
 .contenedorMetodos {
   background-color: #C5CAE9;
-  height: 27em;
   width: 100%;
 }
 
 .contenedorMetodos h2 {
   color: #212121;
+  margin-top: 0.5em;
   padding-top: 1em;
   text-align: center;
   font-size: 5vh;
@@ -169,8 +172,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -186,7 +187,7 @@
 }
 
 .web, .MobileFirst, .SPA {
-  margin-top: 1.4vh;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +196,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  width: 20%;
+  width: 21%;
 }
 
 .web h3, .web p, .MobileFirst h3, .MobileFirst p, .SPA h3, .SPA p {
@@ -222,7 +223,7 @@
 }
 
 .contact {
-  margin-top: 0em;
+  margin-top: 3vh;
   font-size: medium;
   color: black;
   text-align: center;
@@ -251,7 +252,7 @@
 }
 
 .botones {
-  margin: 2px;
+  margin: 3px;
 }
 
 @media (max-width: 1069px) {
@@ -433,11 +434,15 @@
     height: -moz-max-content;
     height: max-content;
   }
-  p, h3 {
+  .cvContenedor .cvContenedor__skill {
+    height: 5vh;
+    margin-top: 3vh;
+  }
+  .cvContenedor p, .cvContenedor h3 {
     font-size: smaller;
     margin: 0.3em;
   }
-  img {
+  .cvContenedor img {
     max-width: 3em;
   }
   .Portfolio h4 {

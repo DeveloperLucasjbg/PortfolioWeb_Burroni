@@ -8,6 +8,7 @@ campo.addEventListener("keyup", function(){
 const submi = (event) => {       
      alert( `Gracias por tu mensaje ${nombre} !!`)
      event.preventDefault(); 
+     form.submit()
 }
  
 document.addEventListener("DOMContentLoaded" , () => {

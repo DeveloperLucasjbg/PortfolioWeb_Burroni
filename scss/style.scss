@@ -138,8 +138,8 @@
         align-self: center;
     }
 }
+
 .web, .MobileFirst, .SPA{
-    
     margin:auto;
     display: flex;
     flex-direction: column;
@@ -149,7 +149,6 @@
         margin-top:1vh;
     }
 }
-
 // seccion Portfolio
 .Portfolio{
     background-color:$primary-color-text;
@@ -272,7 +271,6 @@
             p{width:65%;}
         }
     }
-  
     .Portfolio{
         //Pisando Bootstrap
         .row {     
